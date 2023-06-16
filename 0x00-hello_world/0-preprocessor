@@ -1,2 +1,2 @@
 #!/bin/bash
-c_file="$CFILE" output_file="c_preprocessed.c" gcc -E "$c_file" -o "$output_file" echo "Preprocessed file saved as $output_file"
+gcc $CFILE -E -o c
