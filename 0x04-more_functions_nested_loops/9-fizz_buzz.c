@@ -1,0 +1,34 @@
+#include <stdio.h>
+/**
+* main - print 1 to 100 and fizzbuss
+*
+* Return: 0
+*/
+int main(void)
+{
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if ((1 % 3 == 0) && (1 % 5 == 0))
+		{
+		printf("fizzbuzz");
+		}
+		else if (1 % 3 == 0)
+		{
+		printf("Fizz ");
+		}
+		else if (1 % 5 == 0)
+		{
+		printf("Buzz ");
+		}
+		else
+		{
+		printf("%d ", i);
+		}
+	}
+	printf("Buzz");
+	printf("\n");
+
+	return (0);
+}
